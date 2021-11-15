@@ -1,0 +1,80 @@
+/*ohmyfood*/ 
+@media screen and (max-width:998px) /*smartphones */
+{
+
+    header
+    {
+      font-family: Shrikhand.tff;
+
+    }
+    
+    .logo
+    {display:block; 
+    margin-left:auto; 
+margin-right:auto;
+padding-top: 20px; 
+ }
+
+    body 
+    {
+    font-size:150%;
+    }
+
+    .intro
+    {display:block; 
+    text-align:center; 
+  padding: 30px;
+  background-color:#F2F3F4 ; }
+
+  button
+  {font-size: 150%;
+  border-radius: 50px 50px 50px 50px;
+padding: 20px;
+border-style:none; 
+color:white; }
+
+button:hover 
+{opacity:0.5; }
+  
+  .gradiant
+  {background:linear-gradient(#FF79DA, #9356DC ); }
+
+    .localisation
+    {
+    background-color:#E5E7E9 ;
+    padding:30px; 
+   
+    }
+
+    .fas fa-location-dot:before
+    {
+        color:black; 
+    }
+
+  
+
+    .restaurants 
+    {
+    display:block;
+  margin:auto; 
+    width:770px;
+    height: 510px;
+    border-radius: 30px 30px 30px 30px; 
+    object-fit: cover;
+    justify-content: center;
+    }
+
+    .caption
+    {
+  top:500px;
+left:0; 
+background-color:white; 
+width: 770px; 
+height:450px; 
+object-fit: cover;
+ border-radius: 0px 0px 30px 30px;
+
+text-align:center;
+
+}
+}
