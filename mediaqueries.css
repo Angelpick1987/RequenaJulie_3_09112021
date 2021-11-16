@@ -1,4 +1,12 @@
 /*ohmyfood*/ 
+/*code couleurs: 
+
+#f6f6f6 gris très clair 
+#eaeaea gris clair
+#FF79DA rose 
+#9356DC violet
+#353535 noir (footer)
+*/
 @media screen and (max-width:998px) /*smartphones */
 {
 
@@ -24,34 +32,45 @@ padding-top: 20px;
     {display:block; 
     text-align:center; 
   padding: 30px;
-  background-color:#F2F3F4 ; }
+  background-color:#f6f6f6 ;
+background-size:cover;  }
 
-  button
-  {font-size: 150%;
-  border-radius: 50px 50px 50px 50px;
-padding: 20px;
-border-style:none; 
-color:white; }
+
+.menu 
+{background-color:#f6f6f6;
+color:black; 
+padding:50px; 
+justify-content: space-between; }
+
+.grey
+{}
 
 button:hover 
 {opacity:0.5; }
   
   .gradiant
-  {background:linear-gradient(#FF79DA, #9356DC ); }
+  {background:linear-gradient(#FF79DA, #9356DC );
+    font-size: 150%;
+    border-radius: 50px 50px 50px 50px;
+  padding: 20px;
+  border-style:none; 
+  color:white; }
 
     .localisation
     {
-    background-color:#E5E7E9 ;
+    background-color:#eaeaea ;
     padding:30px; 
    
     }
 
-    .fas fa-location-dot:before
+    .fa fa-location-dot:before
     {
         color:black; 
     }
 
-  
+ol:before
+  {color:#9356DC;
+  border-radius:100px; }
 
     .restaurants 
     {
@@ -59,13 +78,13 @@ button:hover
   margin:auto; 
     width:770px;
     height: 510px;
-    border-radius: 30px 30px 30px 30px; 
+    border-radius:30px; 
     object-fit: cover;
     justify-content: center;
     }
 
-    .caption
-    {
+/*.caption
+{
   top:500px;
 left:0; 
 background-color:white; 
@@ -73,8 +92,19 @@ width: 770px;
 height:450px; 
 object-fit: cover;
  border-radius: 0px 0px 30px 30px;
+position:absolute;
+text-align:center;}*/
 
-text-align:center;
+footer
+{background-color:#353535;
+color:white;
+margin-left: 15px; 
+padding:0; }
 
-}
+.logoreverse
+{filter:invert(100%); 
+  display:block; 
+  margin-left:auto; 
+margin-right:auto;
+padding-top: 20px;  }
 }

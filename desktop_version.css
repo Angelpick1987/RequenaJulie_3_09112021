@@ -23,14 +23,14 @@ padding-top: 20px;
     {display:block; 
     text-align:center; 
   padding: 30px;
-  background-color:#F2F3F4 ; }
+  background-color:#f6f6f6 ; }
 
   button
   {font-size: 150%;
   border-radius: 50px 50px 50px 50px;
 padding: 20px;
 border-style:none; 
-color:white; }
+color:black; }
 
 button:hover 
 {opacity:0.5; }
@@ -40,7 +40,7 @@ button:hover
 
     .localisation
     {
-    background-color:#E5E7E9 ;
+    background-color:#eaeaea ;
     padding:30px; 
    
     }
@@ -62,7 +62,7 @@ button:hover
     object-fit: cover;
     }
 
-    .caption
+   /* .caption
     {
   top:500px;
 left:0; 
@@ -72,6 +72,19 @@ height:450px;
 object-fit: cover;
  border-radius: 0px 0px 30px 30px;
 position:absolute;
-text-align:center;
+text-align:center;}*/
 
+
+footer
+{
+    background-color:#353535;
+color:white;
+}
+
+.logoreverse
+{filter:invert(100%); 
+  display:block; 
+  margin-left:auto; 
+margin-right:auto;
+padding-top: 20px;  }
 }
