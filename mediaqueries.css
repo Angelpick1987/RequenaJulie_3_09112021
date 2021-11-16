@@ -35,15 +35,25 @@ padding-top: 20px;
   background-color:#f6f6f6 ;
 background-size:cover;  }
 
+.reservation
+{font-size:x-large;}
 
-.menu 
-{background-color:#f6f6f6;
+.numbers
+{background-color:#9356DC;
 color:black; 
-padding:50px; 
-justify-content: space-between; }
+height:50px; 
+width:50px; 
+border-radius: 50%;
+align-items:center;}
 
-.grey
-{}
+h3
+{font-size:50px;
+align-items:center; 
+display:flex; 
+padding:18px;  }
+
+.numbers.menu
+{align-items:center; }
 
 button:hover 
 {opacity:0.5; }
@@ -68,9 +78,10 @@ button:hover
         color:black; 
     }
 
-ol:before
+ol
   {color:#9356DC;
-  border-radius:100px; }
+  border-radius:100px;
+justify-content:space-around;  }
 
     .restaurants 
     {
@@ -85,8 +96,8 @@ ol:before
 
 /*.caption
 {
-  top:500px;
-left:0; 
+  top:1500px;
+left:300; 
 background-color:white; 
 width: 770px; 
 height:450px; 
@@ -107,4 +118,5 @@ padding:0; }
   margin-left:auto; 
 margin-right:auto;
 padding-top: 20px;  }
+
 }
