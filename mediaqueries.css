@@ -6,6 +6,8 @@
 #FF79DA rose 
 #9356DC violet
 #353535 noir (footer)
+#99E2D0 vert
+
 */
 @media screen and (max-width:998px) /*smartphones */
 {
@@ -20,6 +22,8 @@
     height:5%; 
     top:0; 
     padding: 45px; 
+    display:flex; 
+    flex-direction: row;
   
     }
     
@@ -27,9 +31,11 @@
     {display:block; 
     margin-left:auto; 
 margin-right:auto;
-padding-top:20px; 
+
  }
 
+ .fa-arrow-left
+ {font-size: 50px; }
 
  h1 
  {font-size:70px;
@@ -37,15 +43,27 @@ margin-left: 7%;
 font-weight: 500;  
 font-family: 'Shrikhand';}
 
+.fa-heart
+{  content: "\f004";
+  visibility: visible;
+  color:black;
+font-size: 50px; 
+position:absolute;
+top:75px; 
+right:50px; 
+ border-radius: 50%;
+ padding:.2em;
+ transition-duration: 1s;}
+
 .fa-heart:after /*vide*/
 { 
   content: "\f004";
-   visibility: visible;
+  visibility:visible;
    color:black;
  font-size: 50px; 
  position:absolute;
- top:75px; 
- right:50px; 
+ top:0px; 
+ right:0px; 
   border-radius: 50%;
   padding:.2em;}
 
@@ -57,34 +75,9 @@ font-family: 'Shrikhand';}
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
+  
+
   }
-
-  /*.far-heart:hover
-  {visibility: hidden;}
-
-  .fas-heart /*plein*
-    { visibility:hidden; 
-        color:#9356DC ;
-    font-size: 50px; 
-    position:absolute;
-    top:75px; 
-    right:50px; 
-     border-radius: 50%;
-     padding:.2em;}
-    
-     .fas-heart:hover
-     {visibility: visible;} */
-
-
-
-/*@keyframes move
-
- {
-
-5%    
- color:#9356DC;  }
-100%  { content: 	'\2764'; transform:scale(1.2);
-  color:#9356DC; }*/
 
 
 
@@ -98,6 +91,7 @@ margin-left:auto;
 margin-right: auto; 
 margin-top:0px; 
 margin-bottom: 0px; 
+flex-direction:row; 
   
  }
 
@@ -106,7 +100,7 @@ margin-bottom: 0px;
   {
     box-sizing:border-box; 
     margin:auto; 
-/*text-align:center;*/
+    background-color:#f6f6f6;
 position:absolute; 
 width:100%; 
 height:68%;
@@ -125,8 +119,7 @@ bottom:10%;
 
     .alafrancaise, .lanoteenchantee, .lapalettedugout, .ledelicedessens 
     { border-radius: 100px 100px 0px 0px;
-      background-color:#f6f6f6;
-  
+       
       padding : 15px 30px 0 15px; 
      align-items: center;
  }
@@ -189,7 +182,32 @@ padding-bottom:50px;
 
 button:hover 
 {opacity:0.5; }
-  
+
+.carte 
+{text-align:left; 
+background-color: white;
+border-radius: 50px; 
+display:flex; 
+width: 935px;
+height:150px; 
+margin:17px; 
+padding:50px; 
+display:flex;
+flex-direction: row;
+vertical-align: auto;
+overflow:hidden; 
+}
+
+.entree, .accompagnement, .prix 
+{}
+
+nav
+{width: 100%;
+box-sizing: border-box;
+display:flex; 
+flex-direction:column;
+background-color:#f6f6f6;}
+
   .gradiant
   {background:linear-gradient(#FF79DA, #9356DC );
     font-size: 150%;
@@ -205,7 +223,7 @@ button:hover
    
     }
 
-    .fa-location-dot:before
+    .fa-location-dot:after
     {
         color:black; 
     }
@@ -226,26 +244,31 @@ justify-content:space-around;  }
 
     }
 
-/*.caption
-{
-  top:1500px;
-left:300; 
-background-color:white; 
-width: 770px; 
-height:450px; 
-object-fit: cover;
- border-radius: 0px 0px 30px 30px;
+ .fa-check-circle
+ {height:150px; 
+  width: 142px;  
+top: 0px; 
+border:solid thin grey; 
+margin:328px; 
+left: 500px; 
+background-color:#99E2D0; 
+color:white; 
 position:absolute;
-text-align:center;}*/
+font-size: 50px;
+justify-content: center;
+display:block; 
+ }
 
 .pied /*restaurants */
 {background-color:#353535;
 color:white;
 position:absolute; 
+
 bottom:0%; 
 box-sizing: border-box;
 width:100%;
 height:10%;
+justify-content: space-around;
 
 
  }
@@ -257,6 +280,8 @@ height:10%;
   box-sizing: border-box;
   width:100%;
   height:10%;
+  font-size:30px; 
+  bottom: 10px; 
   
   
    }
