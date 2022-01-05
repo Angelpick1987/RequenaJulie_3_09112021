@@ -187,20 +187,34 @@ button:hover
 {text-align:left; 
 background-color: white;
 border-radius: 50px; 
-display:flex; 
 width: 935px;
 height:150px; 
 margin:17px; 
-padding:50px; 
-display:flex;
-flex-direction: row;
 vertical-align: auto;
-overflow:hidden; 
+ 
+position:relative; 
+
 }
 
-.entree, .accompagnement, .prix 
-{}
+.accompagnement
+{margin:5px;  }
 
+.entree
+{margin: 5px ;
+font-weight: 900;  }
+
+.prix
+{
+
+margin: 10px; 
+position:absolute; 
+right:165px; 
+bottom: 10px;  
+box-sizing: border-box;}
+
+.tartare
+{display:flex; 
+flex-direction: column;}
 nav
 {width: 100%;
 box-sizing: border-box;
@@ -244,19 +258,24 @@ justify-content:space-around;  }
 
     }
 
- .fa-check-circle
- {height:150px; 
-  width: 142px;  
-top: 0px; 
-border:solid thin grey; 
-margin:328px; 
-left: 500px; 
+
+
+ .fa-check-circle::before
+ {
+ 
+   height:100%; 
+  width: 15%;  
+  border-radius: 0px 50px 50px 0px; 
+right:0%; 
+top:0%; 
+padding-top:47px; 
 background-color:#99E2D0; 
 color:white; 
 position:absolute;
+text-align:center; 
 font-size: 50px;
 justify-content: center;
-display:block; 
+box-sizing: border-box;
  }
 
 .pied /*restaurants */

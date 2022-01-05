@@ -1,88 +1,104 @@
 <!--Oh My Food Page 1 "a la française"-->
 <!DOCTYPE html>
 <html lang="fr">
-    <head> 
-        <head> 
-            <link rel="stylesheet" href="mediaqueries.css" />
-            <link rel="stylesheet" href="CSS/all.min.css"/>
-            <link rel="stylesheet" href="font-awesome.min.css"/>
-    <link rel="stylesheet" href="desktop_version.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-        </head>
-    
-    <title>ohmyfood - Restaurant A la Française</title> 
 
+<head>
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="desktop_version.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<title>ohmyfood - A la Française</title>
+</head>
+<body>
+  <figure id="placement">
     <header>
-        <img src="images/logo/ohmyfood.png" alt="logo OMF" class="logo">
+      <i class="fas fa-arrow-left"></i>
+      <img src="images/logo/ohmyfood.png" alt="logo OMF" class="logo">
     </header>
-<body> 
-    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la Française" class ="restaurants">
-        <br> 
-        <div class = "alafrancaise">
-             <h1> A la Française</h1>
-
-                
-                    <nav> 
-                        <h4>ENTRÉES</h4>
-    <button>Tartare de poulpe acidulé 
-    <br> Aux zestes d'oranges   35€
-    </button>
-    <br>
-    <button>Velouté de légumes d'antan 
-    <br>Carotte, panais, topinambour 35€
-    </button>
-    <br>
-    <button>Soupe à l'oignon
-    <br> Revisitée 20€
-    </button>
-                    </nav>
-
-                    <nav>
-     <h4>PLATS</h4>
-     <button>Coquilles Saint-Jacques
-    <br>Accompagnées d'une purée de panais 40€ </button>
-    <br>
-    <button>Magret de canard
-        <br>Et parmentier de pommes de terre 35€ </button>
-        <br>
-        <button>Pigeonneau d'Ille-et-Vilaine
-            <br>Sur son lit de gnocchis aux légumes 44€ </button>
-            <br>
- </nav>
- <nav><h4>DESSERTS</h4>
-    <button>Pétales de violettes glacées
-        <br>Et purée de noisettes 18€ </button>
-        <br>
-    
-        <button>Fondant au chocolat
-            <br>Revisité </button>
-            <br>
-            <button>Millefeuille croustillant
-                <br>Myrtilles et pâte d'amande </button>
-                <br>
-                       
-        </nav>
-<br>
-<br> 
-<br>
-        <button class = "gradiant">commander</button>
-    </div>
+    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la Française" class="restaurants">
+    <figcaption class="alafrancaise">
+      <h1>A la Française</h1>
+      <i class="far fa-heart"></i>
+      <nav>
+        <h2>ENTRÉES</h2>
+        <button class="carte">
+          <p class="entree">Tartare de poulpe acidulé</p>
+          <p class="accompagnement">Aux zestes d'oranges</p>
+            <p class="prix">35€</p>
+            <i class="fas fa-check-circle"></i>
+        </button>
+        <button class="carte">
+            <p class="entree">Velouté de légumes d'antan</p>
+          <p class="accompagnement">Carotte, panais, topinambour</p>
+          <p class="prix">35€</p>
+          <i class="fas fa-check-circle"></i>
+        </button>
+        <button class="carte">
+        <p class="entree">Soupe à l'oignon</p>
+        <p class="accompagnement">Revisitée</p>
+        <p class="prix">20€</p>
+        <i class="fas fa-check-circle"></i>
+        </button>
+      </nav>
+      <nav>
+        <h2>PLATS</h2>
+        <button class="carte">
+            <p class="entree">Coquilles Saint-Jacques</p>
+            <p class="accompagnement">Accompagnées d'une purée de panais</p>
+            <p class="prix"> 40€</p>
+            <i class="fas fa-check-circle"></i>
+        </button>
+        
+        <button class="carte">
+            <p class="entree">Magret de canard</p>
+            <p class="accompagnement"> Et parmentier de pommes de terre</p>
+            <p class="prix">  35€</p>
+            <i class="fas fa-check-circle"></i></button>
+        
+        <button class="carte">
+            <p class="entree">Pigeonneau d'Ille-et-Vilaine</p>
+            <p class="accompagnement"> Sur son lit de gnocchis aux légumes</p>
+          <p class="prix">   44€</p>
+          <i class="fas fa-check-circle"></i></button>
+      
+      </nav>
+      <nav>
+        <h2>DESSERTS</h2>
+        <button class="carte">
+            <p class="entree">Pétales de violettes glacées</p>
+            <p class="accompagnement"> 
+          Et purée de noisettes</p>
+          <p class="prix">  18€ </p><i class="fas fa-check-circle"></i></button>
+        
+          <button class="carte">
+            <p class="entree">Fondant au chocolat</p>
+            <p class="accompagnement"> Revisité</p>
+            <p class="prix"> €</p><i class="fas fa-check-circle"></i></button>
+        
+          <button class="carte">
+            <p class="entree">Millefeuille croustillant</p>
+            <p class="accompagnement">Myrtilles et pâte d'amande</p> 
+            <p class="prix"> €</p><i class="fas fa-check-circle"></i></button>
+        
+      </nav>
+   
+      <button class="gradiant">commander</button>
+    </figcaption>
+    <footer class="pied">
+      <img src="images/logo/ohmyfood.png" alt="logo OMF" class="logoreverse">
+      <i class="fas fa-utensils"></i>Proposer un restaurant
+      <br>
+      <i class="far fa-handshake"></i>Devenir partenaire
+      <br>Mentions légales
+      <br>Contact</footer>
+  </figure>
 </body>
 
-<br> 
-<br>
-<br>
-<footer>
-    <img src="images/logo/ohmyfood.png" alt="logo OMF" class="logoreverse">
-    Proposer un restaurant
-
-    <br>Devenir partenaire
-    <br>Mentions légales
-    <br>Contact 
-</footer>
-
+</html>
