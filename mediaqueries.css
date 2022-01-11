@@ -218,9 +218,21 @@ vertical-align: auto;
 position:relative; 
 cursor:pointer; 
 transition-duration:1s; 
+animation:apparition 0.6s; 
+animation-timing-function:ease; 
+animation-fill-mode:none; 
+animation-delay:100ms; 
+animation-timing-function:cubic-bezier(.5, 1.58, .34, .82); 
+animation-fill-mode:both; 
+transform:scale(0); 
+max-width:100%; 
 }
 .carte:hover .slide
 { transform:translate(-141px); }
+
+@keyframes apparition{from {opacity:scale(0)}
+to {opacity:1; 
+transform:scale(1)}}
 
 .accompagnement
 {margin:5px; 
