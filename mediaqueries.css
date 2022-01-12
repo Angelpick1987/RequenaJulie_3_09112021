@@ -173,7 +173,9 @@ width:30px;
 border-radius: 50%;
 align-items:center;
 margin:-12px; 
-display:flex; }
+display:flex; 
+flex-direction:column;
+ }
 
 h3
 {font-size:40px;
@@ -182,12 +184,13 @@ display:flex;
 padding:18px;  }
 
 .numbers.menu
-{align-items:center; 
+{align-items:center;
+
 }
 .list_menu
 {
 display:flex; 
-flex-direction:row;
+flex-direction:column;
 justify-content: space-around;
 padding-bottom:50px; 
 }
@@ -199,7 +202,7 @@ padding-bottom:50px;
   border-radius:30px; 
   padding:20px;
   margin:auto;  
-  flex-direction: row;
+  flex-direction: column;
 
 }
 
@@ -207,7 +210,7 @@ padding-bottom:50px;
 {opacity:0.5; }*/
 
 .carte
-{text-align:left; 
+{/*text-align:left; 
 background-color: white;
 border-radius: 50px; 
 width: 935px;
@@ -225,7 +228,48 @@ animation-delay:100ms;
 animation-timing-function:cubic-bezier(.5, 1.58, .34, .82); 
 animation-fill-mode:both; 
 transform:scale(0); 
-max-width:100%; 
+max-width:100%; */
+
+animation: fadein 2s;
+-moz-animation: fadein 2s; /* Firefox */
+-webkit-animation: fadein 2s; /* Safari et Chrome */
+-o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+from {
+    opacity:0;
+}
+to {
+    opacity:1;
+}
+}
+@-moz-keyframes fadein { /* sur Firefox */
+from {
+    opacity:0;
+}
+to {
+    opacity:1;
+}
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+from {
+    opacity:0;
+}
+to {
+    opacity:1;
+}
+}
+@-o-keyframes fadein { /* sur Opera */
+from {
+    opacity:0;
+}
+to {
+    opacity: 1;
+}
+}
+
+
+
 }
 .carte:hover .slide
 { transform:translate(-141px); }
@@ -382,6 +426,7 @@ justify-content: space-around;
   height:10%;
   font-size:30px; 
   bottom: 10px; 
+  margin:auto; 
   
   
    }
